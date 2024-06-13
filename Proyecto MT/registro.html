@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="registro&inicio.js"></script>
+<link rel="website icon" type="png"
+href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+
+<title>Registro e Inicio de Sesión</title>
+</head>
+<body>
+
+    <!--INICIO DE REGISTRO-->
+<div class="container">
+    <h2>Registro</h2>
+    <form id="registroForm" style="display: block;">
+        <input type="text" placeholder="Nombre" required><br>
+        <input type="text" placeholder="Correo Electrónico" required><br>
+
+        <div class="password-container">
+            <input type="password" class="password-input" id="password1" placeholder="Contraseña">
+            <span class="toggle-password" onclick="togglePassword('password1')">Mostrar</span>
+          </div>
+
+        <input type="submit" value="Registrarse">
+    </form>
+    <div class="success-message" id="successMessage">¡Registro exitoso!</div>
+    <div class="switch">
+        ¿Ya tienes una cuenta? <a href="#" onclick="toggleForm()">Iniciar Sesión</a>
+    </div>
+</div>
+<!--FIN DEL REGISTRO-->
+
+
+<!--INICIO DE SESIÓN-->
+<div class="container" style="display: none;" id="loginContainer">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+        <input type="text" placeholder="Correo Electrónico" required><br>
+
+        <div class="password-container">
+            <input type="password" class="password-input" id="password2" placeholder="Contraseña">
+            <span class="toggle-password" onclick="togglePassword('password2')">Mostrar</span>
+          </div>
+          
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+    <div class="success-message" id="loginSuccessMessage">¡Inicio de sesión exitoso!</div>
+    <div class="switch">
+        ¿No tienes una cuenta? <a href="#" onclick="toggleForm()">Regístrate</a>
+
+
+    
+    </div>
+</div>
+<!--FIN DEL INICIO DE SESIÓN-->
+
+</body>
+</html>
