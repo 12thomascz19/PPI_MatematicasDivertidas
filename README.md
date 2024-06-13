@@ -57,7 +57,7 @@ Leonardo Filius Bonacci fue un matemático innovador del siglo XIII cuyo 'Libro 
 A través de este análisis detallado de las aportaciones de Pitágoras, Hipatia de Alejandría, Leonhard Euler, Fibonacci y Mary Cartwright, se ha demostrado su papel fundamental en el desarrollo de las matemáticas. Sus obras han dejado un legado duradero que continúa influyendo en el campo y las disciplinas relacionadas en la actualidad.  
 
 
-# ** ADJETIVO PÚBLICO REALIZADO **
+# ADJETIVO PÚBLICO REALIZADO 
  En esta presentación explicamos cada sección en detalle, utilizando gráficos, tablas y ejemplos concretos para ilustrar mis puntos de vista. También nos aseguramos de mantener un tono claro y entusiasta para captar la atención de la audiencia. Después de presentar este tema estaremos abiertos a responder preguntas del público. Lo cual nos daría la oportunidad de demostrar nuestra comprensión del tema y también nuestra capacidad para comunicar ideas de manera asertiva. También aprovecharía esta interacción para recibir comentarios 
  constructivos que puedan enriquecer nuestro proyecto.
  
@@ -120,11 +120,11 @@ En resumen, nuestro proyecto se centrará en cumplir con estos requisitos
 
 The realization of this project is justified by a practical approach that applies mathematics in the school context. Through active problem solving, students will have the opportunity to improve their understanding of fundamental mathematical concepts, as well as their ability to apply these skills in concrete situations. In addition, when faced with real-world challenges, the development of cognitive skills and applied reasoning capacity is encouraged."
 
-## ** PROBLEM STATEMENT ** 
+## PROBLEM STATEMENT 
 
 In the fifth grade of primary school there are children who have difficulties, which do not allow them to understand the basic mathematical topics explained in class such as: statistics, fractions, addition, subtraction, multiplication and division problems, sequences, mental calculation. So for that solution we developed this app in order to provide a solution to this problem, exercising their mentality with practice, thus allowing students to adapt to these explanations through mathematical challenges in the form of fun games. Additionally, this application could include simple explanations and examples to reinforce the understanding of mathematical concepts.
 
-## ** GENERAL OBJECTIVE ** 
+##  GENERAL OBJECTIVE 
 
 To evaluate the effectiveness of an individualized tutoring program in improving the mathematics understanding and performance of a struggling fifth grade student, by analyzing his academic progress, his attitude toward the subject, and his ability to solve problems, with in order to provide an effective intervention that promotes academic success and self-confidence in the area of ​​mathematics.
 
@@ -134,7 +134,7 @@ To evaluate the effectiveness of an individualized tutoring program in improving
 
 
  
-## ** BACKGROUND ** 
+##  BACKGROUND 
 
 ## Title of the Degree Project Strengthening the Mathematical Process: “Formulate, Compare, and Exercise Procedures and Algorithms”, in the Fifth Grade Students of the Gabriela Mistral Business Institute of Floridablanca Santander through problem situations.
 Through an exploratory study, the need to know new ways to guide knowledge in fifth grade students of primary education in the subject of mathematics was detected, through the collection and analysis of data obtained at the "Sor Juana Inés de la Cruz" school. To solve the detected problem, the Project Oriented Learning (POL) didactic technique was used to solve educational problems. The project has 3 phases: Analysis of the problem, resolution and reporting of results, the development of each phase allowed us to develop a product. In the first phase, a work plan to follow was developed, analysis of the problem, for which the mission and vision of the educational establishment was very important, here a proposal is made to resolve the problem, as well as the design of the prototype. The second phase was the process of the manual "Strategies for significant development in the subject of mathematics, in the axes of measurement and geometry: areas and perimeters of regular polygons in fifth grade." From February 4, 2002 to March 1, 2002, it was implemented in the fifth grade of the aforementioned primary school, achieving the main objective: to train the teacher to develop strategies and achieve significant learning in the students, with activities proposed in the manual. According to the evaluation, the manual is functional to the problem detected; It provoked interest among teachers to innovate their function by updating it and the students began to eradicate the phrases, "it is the most boring subject", "it is the most difficult", "I never understand". In final results, it was concluded that significant learning strategies can also be used in other subjects, achieving the development of cognitive skills that the student uses throughout his or her life when presented with a problem using mathematical logical reasoning.
@@ -145,7 +145,7 @@ The teaching of mathematics has constantly been a problem in the learning of stu
 ## Title of the Degree Project Strengthening the Mathematical Process: “Formulate, Compare, and Exercise Procedures and Algorithms”, in the Fifth Grade Students of the Gabriela Mistral Business Institute of Floridablanca Santander through problem situations.
 
 ## STATE OF THE ART
-It gives its name to the Pythagorean Theorem, which allows us to relate the three sides of a right triangle, check if it is a right triangle or know the value of one of the sides (hypotenuse angle and the two legs). He also theorized the Harmony of the Spheres, based on the idea that the universe follows harmonious numerical proportions and that the movement of bodies is governed by musical intervals. ** **
+It gives its name to the Pythagorean Theorem, which allows us to relate the three sides of a right triangle, check if it is a right triangle or know the value of one of the sides (hypotenuse angle and the two legs). He also theorized the Harmony of the Spheres, based on the idea that the universe follows harmonious numerical proportions and that the movement of bodies is governed by musical intervals. 
 ![Teorema De Pitágoras](https://lh7-us.googleusercontent.com/docsz/AD_4nXfg2P1y0zyuv6v7kSBl-Eke5LWpgSeIhJneuneiDFdTlM0lpLYy-C2ML5uUzS4WuZzToled3-FBvv73SqmLAJ45qs01d04UZFbiW58P57paym-fDSzFXruNTB_QzG5-Ba5W-HDJ_Rjt7Sm5l_BxKJon_rSH0xUUUPnyHjvLWw?key=3bmdoduzGy8iF1S3wL_o4A)**
 ## HYPATHIA OF ALEXANDRIA:
 She wrote about geometry, algebra and astronomy, and is considered the first female scientist in history. This mathematician, astronomer and philosopher improved the design of the primitive astrolabes, invented the densimeter and carried out great educational work at the Museum; institution where she was educated and of which she later became director. 
@@ -156,7 +156,7 @@ Swiss philosopher and mathematician, he began his university studies at the age 
 ##  FIBONACCI:
 Leonardo Filius Bonacci was an innovative 13th century mathematician whose 'Book of Calculation' popularized Arabic numerals; the number system currently used (1, 2, 3, 4...). His great discovery arose when he was trying to solve an enigma about the mating habits of rabbits: the Fibonacci sequence, which begins with the numbers 0 and 1 and from there on, each term becomes the sum of the previous two, that is , in a recurrence relationship.![Día Internacional Matemáticas](https://lh7-us.googleusercontent.com/docsz/AD_4nXectj_1GQLNfF_MfpgLGs_udtJvO-mm3Nk4uOi40ZL2nDAyKKyHSxrxKBfBjOftYOK9kaWEPwcEWNZcwEtVIELd57-KC2Su5AnOQrvMQhjZh27s05LElCFov6XV43p8K5mGSVKjoTAeOG2mvw-2WCv5AXsjMqjOTyq117zYvA?key=3bmdoduzGy8iF1S3wL_o4A)
 
- ## ## MARY CARTWRIGHT:
+ ## MARY CARTWRIGHT:
 
  Oxford and was the first woman to hold the presidency of [](https://www.lms.ac.uk/) London Mathematical Society and to receive the Sylvester Medal for mathematical research. He constructed Cartwright's Theorem based on maxima of functions and worked with John Edensor Littlewood on differential equations that served as a model for the development of radio and radar. *![Día Internacional Matemáticas](https://lh7-us.googleusercontent.com/docsz/AD_4nXfDD1yH0jbzsPLmMu4UHLaMvyO8I8e_KDG4OkLdGwhiH0zEeihFCeZO4z4A9Dq_DaodA0M8Usqhej5t_ePEZ6Lix4MVeTelO5VEclrPhrMomYzSFpt7u5SS-J0kmy58lf4v3Uv-9J5BLoYQJ9m5CLXhp93wSKiMtMoj6yoy?key=3bmdoduzGy8iF1S3wL_o4A)**
 
