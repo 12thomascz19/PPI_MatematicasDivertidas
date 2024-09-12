@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matamática Divertidas</title>
+    <link rel="website icon" type="png"
+    href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  
+   
+    <header class="btn-container">
+        <div class="container">
+            <h1>Matemáticas Divertidas</h1>
+        </div>
+          <div id="welcome-message" style="display:none;">
+            <h2>Bienvenido, <span id="user-name"></span>!</h2>
+        </div>
+        <!-- <div id="user-info" style="display:none; position: fixed; top: 10px; right: 10px;">
+            <p>Hola, <span id="display-username"></span>!</p>
+        </div> -->
+        <div class="dropdown-content">
+            <a href="Juegos/index.html">Juegos 🎮</a>
+            <a href="videos/index.html">Videos 📽</a>
+            <a href="formulario/contacto.html">Contactanos</a>
+            <a href="Temas/index.html">Temas matemáticos</a>
+            <a href="sobre nosotros/index.html">Sobre nosotros</a>
+            
+            <div class="menu-container">
+                <button class="menu-btn" onclick="toggleMenu()">Menú</button>
+                <div id="dropdownMenu" class="content">
+                    <div class="wrapper">
+                        <div class="button-container">
+                            <button class="logout-button" id="logoutButton">Cerrar Sesión</button>    
+                      </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+    <div class="container">
+            <h2>Bienvenido a nuestra página Matemáticas Divertidas</h2>
+            <a class="about-button" href="nuestros sevicios/index.html" >Explora nuestros servicios y descubre todo lo que podemos ofrecerte</a>
+        </div>
+    </section>
+    
+    <script>
+        const logoutButton = document.getElementById('logoutButton');
+        logoutButton.addEventListener('click', () => {
+            localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
+            window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión
+        });
+
+        // Comprobar si el usuario está logueado al cargar la página
+        window.addEventListener('load', () => {
+            const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+            if (!loggedInUser) {
+                window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión si no está logueado
+            }
+        });
+
+        
+
+// Llamar a displayUserInfo cuando la página de destino se cargue
+document.addEventListener('DOMContentLoaded', displayUserInfo);
+
+    </script>
+    <footer>
+        <div class="container">
+            <p class="text">&copy; 2024 Página. Matemáticas Divertidas.</p>
+            <p class="tel">Tel: +57 312-291-6084</p>
+            <p>E-mail: matematicasdivertidas95@gmail.com</p>
+        </div>
+    </footer>
+    <script src="pagina.js"></script>
+</body>
+</html>
+

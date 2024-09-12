@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2); ;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+ul li a:hover {
+    background-color: rgb(0, 102, 255);
+    padding: 14px 16px;
+    border-radius: 10px;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fffbfb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo span{
+    color: #05fe3b;
+}
+
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li{
+    position: relative;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.5s;
+}
+
+navbar a:hover{
+    color: #05fe50;
+}
+
+.navbar .active{
+    color: #05fe09;
+}
+
+.text{
+    max-width: 50%;
+    padding: 85px 85px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.text h1{
+    font-size: 55px;
+    font-family: sans-serif;
+}
+
+.text span{
+    color: #05fe16;
+    font-family: sans-serif;
+}
+
+.text p{
+    margin: 10px 0 20px;
+    font-family: sans-serif;
+}
+
+.btn{
+    color: #fff;
+    background: linear-gradient(rgb(0, 255, 55), #000000);
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 0 15px  #a6aed3;
+}
+
+.btn:hover{
+    letter-spacing: 3px;
+}
+
+.img{
+    width: 410px;
+    height: 410px;
+    position: relative;
+    translate: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle{
+    width: 100%;
+    height: 100%;
+    background: #fe05e9;
+    border-radius: 50%;
+    position: absolute;
+    left: 200%;
+    top: -99%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cercle span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#01fa26,rgb(0, 0, 0));
+    filter: blur(20px);
+    animation: cercle  2s linear infinite;
+}
+@keyframes cercle{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.cercle::after{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius:50%;
+}
+
+.circle-image {
+    width: 100%; /* Ajusta el tamaño de la imagen al tamaño del contenedor */
+    height: auto; /* Para mantener la relación de aspecto de la imagen */
+    position: absolute; /* Coloca la imagen dentro del contenedor */
+    top: 50%; /* Mueve la imagen hacia abajo un 50% de la altura del contenedor */
+    left: 50%; /* Mueve la imagen hacia la derecha un 50% de la anchura del contenedor */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+}
+
+.circle-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Esto crea el círculo */
+    overflow: hidden; /* Oculta el exceso de la imagen fuera del círculo */
+    position: relative; /* Establece el contexto de posicionamiento */
+    margin: 0 auto; /* Centra el círculo horizontalmente */
+  }
+
+div ol{
+    text-align: left;
+    margin: 0px;
+    transform: translateY(-280px);
+}
+
+div ol li{
+    text-align: left;
+    margin: 0px;
+    transform: translateY(-125px);
+}
+
+.logo img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    left: 50px;
+    translate: 100, 0px;
+    transform: translateX(200%);
+    transform: translateY(-140%);
+}
+
+strong{
+    color: #01fa26;
+}
+
+ul li:hover {
+    border-radius: 45px;
+}
+
+.link {
+    background: #0f0;
+}
+
+.register-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background: rgb(227, 194, 194);
+}

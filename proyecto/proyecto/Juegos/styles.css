@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+body {
+    font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cover {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffebcd;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cover:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    text-align: center;
+    background-color: #ffebcd;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#instructions-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #87ceeb;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px #999;
+}
+
+#instructions-button:hover {
+    background-color: #4682b4;
+}
+
+#instructions {
+    background-color: #f0ffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #87ceeb;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#instructions h2 {
+    color: #ff6347;
+}
+
+.game {
+    margin-top: 20px;
+}
+
+#fraction {
+    font-size: 2em;
+    color: #4682b4;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff0f5;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid #87ceeb;
+    text-align: center;
+    background-color: #f0ffff;
+    color: #4682b4;
+}
+
+.game {
+    border: 2px solid #ff6347;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    background-color: #fffacd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+button {
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2eb82e;
+}
+
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#message.correct {
+    color: #32cd32;
+    background-color: #f5fffa;
+    border: 2px solid #32cd32;
+}
+
+#message.incorrect {
+    color: #ff0000;
+    background-color: #ffe4e1;
+    border: 2px solid #ff0000;
+}

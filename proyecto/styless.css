@@ -1,0 +1,234 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+/* Estilos generales */
+body {
+    background-image: url('imagen.png');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: rgb(253, 253, 253);
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+.dropdown-content {
+    flex: 1;
+    text-align: center;
+}
+
+.dropdown-content a  {
+    position: relative;
+    padding: 8px 12px;
+    display: inline-block;
+    margin: 20px;
+}
+
+div a {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+div a:hover {
+    background-color: #0dfd19;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-button {
+    background-color: #62d766;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .3s ease;
+
+}
+
+.about-button:hover {
+    background-color: #0dfd19;
+    padding: 14px 16px;
+}
+
+.btn-learn-more {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #45a049;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-right: 70% ;
+    font-size: 14px;
+}
+
+footer .text {
+    margin-right: 75%;
+}
+
+footer .tel {
+    margin-right: 84%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn-learn-more {
+        padding: 12px 24px;
+    }
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    background-color: #62d766;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transform: translateX(10px);
+    transition: all .3s ease;
+    flex: 1;
+    text-align: center; 
+    transform: translateX(-0px);
+   
+}
+
+.logout-button:hover {
+    background-color:  #0dfd19;
+    padding: 10px 20px;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #45a049;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 5px;
+}

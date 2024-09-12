@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="png"
+    href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    <title>Math Games</title>
+</head>
+<body>
+    <div id="cover">
+        <h1>📚Juegos de Matemáticas</h1>
+        <button id="start-fractions">➗Juego de Fracciones</button>
+        <button id="start-statistics">📈Juego de Estadísticas</button>
+        <button id="start-multiplication">✖️ Juego de Multiplicación</button>
+        <button class="back-button" onclick="goBack()">♿Regresar</button>
+    </div>
+
+    <div id="fractions-game" class="hidden">
+        <h2>🍕Juego de Fracciones➗</h2>
+        <button class="return-to-cover">Regresar🔄</button>
+        <button id="fractions-instructions-button">🚫Instrucciones</button>
+        <div id="fractions-instructions" class="hidden">
+            <p>En este juego, verás una fracción🍕 y deberás ingresar la fracción equivalente en la caja de texto. Luego, haz click🖱️ en el botón
+                "Enviar" para verificar tu respuesta.
+                Si tu respuesta es correcta, recibirás un mensaje de felicitación. Si es incorrecta, se te mostrará la respuesta correcta
+                Después de cada intento, puedes hacer clic en "Siguiente" para recibir una nueva fracción y seguir practicando.
+        </div>
+        <div id="fraction-question-container">
+            <p id="fraction-question"></p>
+            <input type="text" id="fraction-answer">
+            <button id="fraction-submit">Enviar📥</button>
+            <p id="fraction-message"></p>
+            <button id="fraction-next">Siguiente↪️</button>
+        </div>
+    </div>
+
+    <div id="statistics-game" class="hidden">
+        <h2>Juego de Estadísticas</h2>
+        <button class="return-to-cover">Regresar🔄</button>
+        <button id="statistics-instructions-button">Instrucciones</button>
+        <div id="statistics-instructions" class="hidden">
+            <p>En este juego, se te mostrará una pregunta estadística y deberás ingresar la respuesta correcta en la caja de texto.
+                Luego, haz clic en el botón "Enviar" para verificar tu respuesta.
+                Si tu respuesta es correcta, recibirás un mensaje de felicitación. Si es incorrecta, se te mostrará la respuesta correcta.
+                Después de cada intento, puedes hacer clic en "Siguiente" para recibir una nueva pregunta y seguir practicando.</p>
+        </div>
+        <div id="statistics-question-container">
+            <p id="statistics-question"></p>
+            <input type="text" id="statistics-answer">
+            <button id="statistics-submit">Enviar</button>
+            <p id="statistics-message"></p>
+            <button id="statistics-next">Siguiente</button>
+        </div>
+    </div>
+
+    <div id="multiplication-game" class="hidden">
+        <h2>Juego de Multiplicación</h2>
+        <button class="return-to-cover">Regresar🔄</button>
+        <button id="multiplication-instructions-button">Instrucciones</button>
+        <div id="multiplication-instructions" class="hidden">
+            <p>En este juego, se te mostrará una pregunta matemática y deberás ingresar la respuesta correcta en la caja de texto. Luego,
+                haz clic en el botón "Enviar" para verificar tu respuesta.
+                Si tu respuesta es correcta, recibirás un mensaje de felicitación. Si es incorrecta, se te mostrará la respuesta correcta.
+                Después de cada intento, puedes hacer clic en "Siguiente" para recibir una nueva pregunta y seguir practicando.</p>
+        </div>
+        <div id="multiplication-question-container">
+            <p id="multiplication-question"></p>
+            <input type="text" id="multiplication-answer">
+            <button id="multiplication-submit">Enviar</button>
+            <p id="multiplication-message"></p>
+            <button id="multiplication-next">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

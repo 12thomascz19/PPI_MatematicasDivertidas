@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matamática Divertidas</title>
+    <link rel="website icon" type="png"
+    href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header class="btn-container">
+        <div class="container">
+            <h1>Matemáticas Divertidas</h1>
+            <div class="dropdown">
+            <button class="dropbtn">Menú 
+                <i class="fa fa-caret-down"></i>
+          </button>
+              <div class="dropdown-content">
+                    <a href="Juegos/index.html">Juegos 🎮</a>
+                    <a href="videos/index.html">Videos 📽</a>
+                    <a href="formulario/contacto.html">Contactanos</a>
+                    <a href="/proyecto/Temas/index.html">Temas de matemáticas</a>
+                    <a href="/proyecto/sobre nosotros/index.html">Sobre nosotros</a>
+                            <div class="wrapper">
+                                <div class="button-container">
+                                    <button class="logout-button" id="logoutButton">Cerrar Sesión</button>    
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Bienvenido a nuestra página Matemáticas Divertidas</h2>
+            <p>Explora nuestros servicios y descubre todo lo que podemos ofrecerte.</p>
+        </div>
+    </section>
+    
+    <script>
+        const logoutButton = document.getElementById('logoutButton');
+        logoutButton.addEventListener('click', () => {
+            localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
+            window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión
+        });
+
+        // Comprobar si el usuario está logueado al cargar la página
+        window.addEventListener('load', () => {
+            const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+            if (!loggedInUser) {
+                window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión si no está logueado
+            }
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Página. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
