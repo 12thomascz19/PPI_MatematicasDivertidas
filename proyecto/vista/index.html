@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas Interactivas - 5to Grado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>¡Matemáticas Divertidas para 5to Grado!</h1>
+            <p>Descubre un mundo lleno de retos y diversión matemática</p>
+            <div class="theme-selector">
+                <label for="theme">Elige tu tema:</label>
+                <select id="theme" onchange="changeTheme()">
+                    <option value="claro">Claro</option>
+                    <option value="oscuro">Oscuro</option>
+                    <option value="divertido">Divertido</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    
+    <section id="intro" class="section">
+        <div class="container">
+            <h2>Bienvenido a tu aventura matemática</h2>
+            <p>Explora nuestros juegos, desafíos diarios y mucho más. ¡Aprenderás mientras te diviertes!</p>
+            <button class="btn" onclick="scrollToSection('games')">Comienza a jugar</button>
+        </div>
+    </section>
+
+    <section id="progress" class="section">
+        <div class="container">
+            <h2>Tu Progreso</h2>
+            <div class="progress-bar">
+                <div class="progress-inner" id="progress-inner"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="section">
+        <div class="container">
+            <h2>Juegos Matemáticos</h2>
+            <div class="games-grid">
+                <div class="game-card" onclick="startGame('fracciones')">
+                    <img src="fraction-game.jpg" alt="Juego de Fracciones">
+                    <h3>Fracciones</h3>
+                    <p>Puntaje: <span id="score-fracciones">0</span></p>
+                </div>
+                <div class="game-card" onclick="startGame('multiplicacion')">
+                    <img src="multiplication-game.jpg" alt="Juego de Multiplicación">
+                    <h3>Tablas de Multiplicar</h3>
+                    <p>Puntaje: <span id="score-multiplicacion">0</span></p>
+                </div>
+                <div class="game-card" onclick="startGame('estadistica')">
+                    <img src="statistics-game.jpg" alt="Juego de Estadística">
+                    <h3>Estadística Divertida</h3>
+                    <p>Puntaje: <span id="score-estadistica">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="daily-challenge" class="section">
+        <div class="container">
+            <h2>Desafío Diario</h2>
+            <p>Resuelve este problema para ganar puntos extra:</p>
+            <div class="challenge-box">
+                <p>¿Cuál es el resultado de 36 ÷ 6?</p>
+                <input type="number" id="daily-answer" placeholder="Tu respuesta">
+                <button class="btn" onclick="checkAnswer()">Enviar Respuesta</button>
+            </div>
+            <p id="result-message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Matemáticas para 5to Grado. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#games">Juegos</a> |
+                <a href="#contact">Contacto</a> |
+                <a href="#help" onclick="openHelp()">Ayuda Matemática</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="help-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeHelp()">&times;</span>
+            <h3>Ayuda Matemática</h3>
+            <p>Recuerda que practicar todos los días es clave para mejorar tus habilidades matemáticas.</p>
+        </div>
+    </div>
+</body>
+</html>

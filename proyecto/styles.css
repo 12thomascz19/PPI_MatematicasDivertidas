@@ -3,10 +3,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:  sans-serif;
     background: #56CCF2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2); 
+    background: #fff;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    background: transparent;
+    background: #05fe09;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
                 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -143,9 +143,9 @@ form {
 }
 button {
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
-    background-color: #ff4b2b;
-    color: #090808;
+    border: 1px solid #05fe09;
+    background-color: #05fe09;
+    color: #fff;
     font-size: 12px;
     font-weight: bold;
     padding: 12px 45px;
@@ -155,6 +155,9 @@ button {
     transition: 0.5s ease;
 }
 
+.loginForm, h1 {
+    color: #000;
+}
 button:active {
     transform: scale(0.95);
 }
@@ -204,7 +207,7 @@ p {
 }
 
 .toggle-password {
-    background: #ff4b2b;
+    background: #05fe09;
     border: none;
     color: white;
     padding: 12px;

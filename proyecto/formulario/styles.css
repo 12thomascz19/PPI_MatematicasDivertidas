@@ -1,31 +1,16 @@
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: sans-serif;
     background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-section {
-    padding: 60px 20px;
-    background-image: url('');
-    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat;
-    border: 2px dashed #ff6347;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+    /* box-sizing: border-box; */
 }
 
 h2 {
     text-align: center;
-    color: #ff4500;
-    font-size: 2.5em;
+    color: #1e88e5;
+    font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px #ffa07a;
 }
 
 form {
@@ -57,40 +42,8 @@ input[type="text"], input[type="email"], textarea {
     color: #4682b4;
 }
 
-button {
-    display: inline-block;
-    background-color: #ff6347;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff4500;
-}
-
-.btn-back {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-back:hover {
-    background-color:#0dfd19;
-}
-
 /* Gráficos matemáticos */
 form::before {
-    content: url('https://img.icons8.com/color/48/000000/math.png');
     position: absolute;
     top: -40px;
     left: 50%;
@@ -117,4 +70,44 @@ section::before {
 section::after {
     bottom: -50px;
     right: -50px;
+}
+
+.save-button {
+    position: absolute;
+    /* top: 20px;} */
+    /* left: 20px; */
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1e88e5;
 }

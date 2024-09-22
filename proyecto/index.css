@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+
+
+ul li a:hover {
+    border-bottom: 3px solid #000000;
+}
+
+.logo {
+    font-size: 2em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #05fe3b;
+}
+
+.navbar {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li{
+    position: relative;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.navbar a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.5s;
+    gap: 1rem;
+}
+
+navbar a:hover{
+    color: #05fe50;
+}
+
+.navbar .active{
+    color: #05fe09;
+}
+
+.text{
+    max-width: 50%;
+    padding: 85px 85px;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.text h1{
+    font-size: 55px;
+    font-family: sans-serif;
+}
+
+.text {
+    color: #05fe16;
+    font-family: sans-serif;
+}
+
+.text p{
+    margin: 10px 0 20px;
+    font-family: sans-serif;
+}
+
+.btn{
+    color: #fff;
+    background: linear-gradient(rgb(0, 255, 55), #000000);
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 0 15px  #a6aed3;
+}
+
+.btn:hover{
+    letter-spacing: 3px;
+}
+
+
+div ol{
+    text-align: left;
+    margin: 0px;
+    transform: translateY(-280px);
+}
+
+div ol li{
+    text-align: left;
+    margin: 0px;
+    color: #000;
+    transform: translateY(-125px);
+}
+
+.logo img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    left: 50px;
+    translate: 100, 0px;
+    transform: translateX(200%);
+    transform: translateY(-140%);
+}
+
+h1 span {
+    color: #000;
+}
+
+strong{
+    color: #01fa26;
+}
+
+ul li:hover {
+    border-radius: 45px;
+}
+
+.link {
+    background: #0f0;
+}
+
+ .register-button {
+    background-color: #61f864;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 8px;
+    text-decoration: none;
+} 
+
+.register-button:hover {
+    background: #05fe09;
+    border: none;
+}
+
+.logo, .navbar ul li {
+    display: inline;
+}
+
+ul li a:hover {
+    color: #000;
+    transition: none;
+}

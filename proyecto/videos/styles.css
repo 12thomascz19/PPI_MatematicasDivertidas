@@ -39,17 +39,21 @@ video:focus {
 }
 
 .back-button {
-    margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #42a5f5;
+    color: white;
     padding: 10px 20px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #5ab05f;
+    font-size: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-    background-color: #0dfd19;
+    background-color: #1e88e5;
 }

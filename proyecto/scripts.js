@@ -85,7 +85,7 @@ menuToggle.addEventListener('click', () => {
 // Evento para cerrar sesión al hacer clic en "Cerrar Sesión"
 const logoutButton = document.getElementById('logoutButton');
         logoutButton.addEventListener('click', () => {
-            localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
+            // localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
             window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión
         });
 

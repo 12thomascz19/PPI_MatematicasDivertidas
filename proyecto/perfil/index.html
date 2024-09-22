@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tu perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">Regresar</button>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-image-container">
+                <img src="ruta-de-tu-imagen-de-perfil" alt="Imagen de perfil" class="profile-pic" id="profile-pic">
+                <input type="file" id="change-profile-pic" style="display:none;" accept="image/*">
+                <label for="change-profile-pic" class="change-pic-btn" id="change-pic-btn" style="display:none;">Cambiar Foto</label>
+            </div>
+            <div class="profile-info-header">
+                <h1 id="profile-name" class="profile-name">Nombre del Estudiante</h1>
+                <input type="text" id="edit-name" class="edit-input" placeholder="Escribe el nuevo nombre" style="display:none;">
+                <p id="profile-grade" class="profile-grade">Grado: 5° de Primaria</p>
+                <input type="text" id="edit-grade" class="edit-input" placeholder="Escribe el nuevo grado" style="display:none;">
+            </div>
+        </div>
+    
+            <button class="profile-btn" id="edit-profile-btn">Editar Perfil</button>
+            <button class="profile-btn" id="save-profile-btn" style="display:none;">Guardar Cambios</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

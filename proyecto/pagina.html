@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matamática Divertidas</title>
     <link rel="website icon" type="png"
-    href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
-    <link rel="stylesheet" href="styless.css">
+   href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="pagina.css">
 </head>
 <body>
-  
-   
     <header class="btn-container">
-        <div class="container">
-            <h1>Matemáticas Divertidas</h1>
-        </div>
-          <div id="welcome-message" style="display:none;">
+        <a href="/proyecto/logo.png" class="logo">Mate<span>máticas</span></a>
+        <div id="welcome-message" style="display:none;">
             <h2>Bienvenido, <span id="user-name"></span>!</h2>
         </div>
         <!-- <div id="user-info" style="display:none; position: fixed; top: 10px; right: 10px;">
@@ -26,58 +23,115 @@
             <a href="videos/index.html">Videos 📽</a>
             <a href="formulario/contacto.html">Contactanos</a>
             <a href="Temas/index.html">Temas matemáticos</a>
-            <a href="sobre nosotros/index.html">Sobre nosotros</a>
+            <!-- <a href="sobre nosotros/index.html">Sobre nosotros</a> -->
             
             <div class="menu-container">
-                <button class="menu-btn" onclick="toggleMenu()">Menú</button>
+                <button class="menu-btn" onclick="toggleMenu()"><i class="bi bi-list" style="color:#FFFFFF;" width="6px" height="6px"></i></button>
                 <div id="dropdownMenu" class="content">
                     <div class="wrapper">
+                        <a href="perfil/index.html" class="perfil" >Tu perfil</a>
                         <div class="button-container">
                             <button class="logout-button" id="logoutButton">Cerrar Sesión</button>    
                       </div>
                 </div>
             </div>
+            <!-- <div class="register-button">
+                <ul>
+                    <li><a class="register-button" href="registro.html" >Registrarse</a></li>
+                </ul>
+            </div> -->
         </div>
     </ul>
 </nav>
 </div>
 </header>
-
-<section class="hero">
+<section id="intro" class="section">
     <div class="container">
-            <h2>Bienvenido a nuestra página Matemáticas Divertidas</h2>
-            <a class="about-button" href="nuestros sevicios/index.html" >Explora nuestros servicios y descubre todo lo que podemos ofrecerte</a>
+        <h2>Bienvenido a tu aventura matemática</h2>
+        <p>Explora nuestros juegos, desafíos diarios y mucho más. ¡Aprenderás mientras te diviertes!</p>
+        <button class="btn" onclick="scrollToSection('games')">Comienza a jugar</button>
+    </div>
+</section>
+
+<section id="progress" class="section">
+    <div class="container">
+        <h2>Tu Progreso</h2>
+        <div class="progress-bar">
+            <div class="progress-inner" id="progress-inner"></div>
         </div>
-    </section>
-    
-    <script>
-        const logoutButton = document.getElementById('logoutButton');
-        logoutButton.addEventListener('click', () => {
-            localStorage.removeItem('loggedInUser'); // Eliminar el usuario logueado
-            window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión
-        });
+    </div>
+</section>
 
-        // Comprobar si el usuario está logueado al cargar la página
-        window.addEventListener('load', () => {
-            const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-            if (!loggedInUser) {
-                window.location.href = 'registro.html'; // Redirigir a la página de inicio de sesión si no está logueado
-            }
-        });
-
-        
-
-// Llamar a displayUserInfo cuando la página de destino se cargue
-document.addEventListener('DOMContentLoaded', displayUserInfo);
-
-    </script>
-    <footer>
-        <div class="container">
-            <p class="text">&copy; 2024 Página. Matemáticas Divertidas.</p>
-            <p class="tel">Tel: +57 312-291-6084</p>
-            <p>E-mail: matematicasdivertidas95@gmail.com</p>
+<section id="games" class="section">
+    <div class="container">
+        <h2>Juegos Matemáticos</h2>
+        <div class="games-grid">
+            <div class="game-card" onclick="startGame('fracciones')">
+                <img src="fractions-game.jpg" alt="Juego de Fracciones">
+                <h3>Fracciones</h3>
+                <p>Puntaje: <span id="score-fracciones">0</span></p>
+            </div>
+            <div class="game-card" onclick="startGame('multiplicacion')">
+                <img src="multiplications-game.jpg" alt="Juego de Multiplicación">
+                <h3>Tablas de Multiplicar</h3>
+                <p>Puntaje: <span id="score-multiplicacion">0</span></p>
+            </div>
+            <div class="game-card" onclick="startGame('estadistica')">
+                <img src="statistics-game.jpg" alt="Juego de Estadística">
+                <h3>Estadística Divertida</h3>
+                <p>Puntaje: <span id="score-estadistica">0</span></p>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+<section id="daily-challenge" class="section">
+    <div class="container">
+        <h2>Desafío Diario</h2>
+        <p>Resuelve este problema para ganar puntos extra:</p>
+        <div class="challenge-box">
+            <p>¿Cuál es el resultado de 36 ÷ 6?</p>
+            <input type="number" id="daily-answer" placeholder="Tu respuesta">
+            <button class="btn" onclick="checkAnswer()">Enviar Respuesta</button>
+        </div>
+        <p id="result-message"></p>
+        <p id="attempt-message" style="color: red;"></p>
+    </div>
+</section>
+
+   <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>¡Practica Matemáticas!</h4>
+        <button id="quiz-button">Juega un Quiz</button>
+        <div id="random-fact"></div>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Sigue Explorando</h4>
+        <a href="Juegos/index.html"><i class="fas fa-gamepad"></i> Juegos de Matemáticas</a>
+        <a href="#lessons"><i class="fas fa-book"></i> Lecciones Divertidas</a>
+        <a href="videos/index.html"><i class="fas fa-video"></i> Videos Educativos</a>
+      </div>
+  
+      <div class="footer-section">
+        <h4>¡Sigue Sumando!</h4>
+        <p>Suscríbete y recibe trucos matemáticos divertidos.</p>
+        <input type="email" placeholder="Tu correo">
+        <button id="subscribe-button">Suscribirse</button>
+        <div class="social-icons">
+          <a href="#" title="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Síguenos en Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: contacto@matematicasdivertidas.com</p>
+        <p>Tel: 312-291-6084</p>
+        <a href="#contact"><i class="fas fa-envelope"></i> Enviar Mensaje
+  
     <script src="pagina.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
 /* styles.css */
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: #f0f8ff;
     text-align: center;
     padding: 20px;
@@ -26,15 +31,6 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-p {
-    font-size: 18px;
-    color: #333;
 }
 
 input[type="text"] {
@@ -80,69 +76,19 @@ body {
     transform: scale(1.05);
 }
 
-.container {
-    text-align: center;
-    background-color: #ffebcd;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-}
-
 .hidden {
     display: none;
 }
 
 h1 {
-    color: #ff6347;
+    color: #1e88e5;
     font-size: 2.5em;
     margin-bottom: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 0 2px #000;
 }
 
-#instructions-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #87ceeb;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px #999;
-}
-
-#instructions-button:hover {
-    background-color: #4682b4;
-}
-
-#instructions {
-    background-color: #f0ffff;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #87ceeb;
-    margin-bottom: 20px;
-    display: none;
-}
-
-#instructions h2 {
-    color: #ff6347;
-}
-
-.game {
-    margin-top: 20px;
-}
-
-#fraction {
-    font-size: 2em;
-    color: #4682b4;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff0f5;
-    border-radius: 10px;
-    border: 2px solid #ff69b4;
-}
 
 input {
     width: 150px;
@@ -178,7 +124,7 @@ button {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    text-align: center;
+    /* text-align: center; */
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
@@ -211,4 +157,94 @@ button:hover {
     color: #ff0000;
     background-color: #ffe4e1;
     border: 2px solid #ff0000;
+}
+
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #42a5f5;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1e88e5;
+}
+span {
+    text-decoration: none;
+}
+
+.juego {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.juegos-fracciones {
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+    display: inline-flex;
+}
+
+a {
+    background-color: #ccf9cf;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    gap: 1rem;
+    transition: padding .2s ease-in;
+}
+
+a:hover {
+    padding: 18px 23px;
+}
+
+a h3 {
+    color: #1e88e5;
+    /* text-shadow: 2px 0 2px #000; */
+    padding: 5px;
+    text-decoration: none;
+    text-decoration-line: none;
+    /* text-transform: uppercase; */
+}
+
+
+
+.juegos-fracciones {
+    display: inline;
+}
+
+/* Games Section */
+.games-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
 }
